@@ -1,0 +1,14 @@
+sort1 uses: Bubble Sort
+
+How do you know?: Reversed 50000 takes 7.411s; Sorted 50000 takes 2.365s; The best case scenerio is vastly imporved. Omega(N) vs O(N^2).
+
+sort2 uses: Merge Sort
+
+
+How do you know?: Reversed 50000 takes 2.877s; sorted 50000 takes 1.136s; This is the most efficient sorting method and there not much a variance between the different list.
+
+
+sort3 uses: selection short
+
+How do you know?: Because of how similar the times are for each list. 
+

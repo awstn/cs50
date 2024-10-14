@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+ 
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+<table class="table">
+    <thead>
+      <tr>
+        <th class="text-start" scope="col">Symbol</th>
+        <th class="text-end" scope="col">Price</th>
+        <th class="text-end" scope="col">Shares</th>
+        <th class="text-end" scope="col">Transaction</th>
+      </tr>
+    </thead>
+    <tbody>
+        {% for shares in userHoldings %}
+            <tr>
+                <td class="text-start"> {{ shares.symbol }} </td>
+                <td class="text-end"> {{ shares.share_cost | usd }} </td>
+                <td class="text-end"> {{ shares.share }} </td>
+                <td class="text-end"> {{ shares.created_at }} </td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}
